@@ -1,0 +1,27 @@
+Django==3.1
+graphene-django==2.13.0
+graphene-django-optimizer==0.8.0
+django-graphql-jwt==0.3.1
+django-filter==2.4
+django-cors-headers==3.5.0
+django-debug-toolbar==3.2
+django-graphiql-debug-toolbar==0.1.4
+django-jazzmin==2.4.8
+django-notifications-hq==1.6.0
+django-summernote==0.8.11.6
+django-graphql-jwt==0.3.1
+Pillow
+PyGithub
+djangorestframework
+markdown
+oic==1.2.1
+pandas
+whitenoise==5.2.0
+django-lifecycle==0.8.0
+django-model-utils==4.1.1
+django-polymorphic==3.0.0
+django-treebeard==4.4
+python-dotenv==0.15.0
+psycopg2-binary
+-e git+https://github.com/MoveBigRocks/core-utils.git#egg=core-utils
+-e git+https://github.com/MoveBigRocks/entitlements.git#egg=entitlements

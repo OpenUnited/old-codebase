@@ -1,0 +1,15 @@
+:root {
+    --bg-grey:#D9D9D9;
+    --text-grey:#D9D9D9;
+    --light-grey:#F5F5F5;
+    --light-black: #262626;
+    --grey-7: #8C8C8C;
+    --grey-9: #262626;
+    --grey-3: #F5F5F5;
+    --grey-5: #D9D9D9;
+    --grey-12: #141414;
+
+    --prior-high: #fbac56;
+    --prior-medium: #70ce42;
+    --prior-point: #c7b55d;
+}

@@ -1,0 +1,110 @@
+.container {
+  margin-bottom: 30px;
+}
+
+.stepsContentWrapper {
+  display: flex;
+  position: relative;
+  padding: 0 40px;
+  align-items: center;
+
+  .registerLine {
+    height: 2px;
+    width: 100%;
+    margin: 0 15px;
+    top: 15px;
+  }
+  .greyLine {
+    background: #f5f5f5;
+  }
+  .blueLine {
+    background: #1890ff;
+  }
+
+  .stepWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .fullBlueBorderWrapper {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      border: 2px solid #1890ff;
+      position: relative;
+      margin-right: 10px;
+
+      &:before {
+        content: '\2713';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 12px;
+        color: #1890ff;
+      }
+    }
+
+    .greyBorderWrapper {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      border: 2px solid #bfbfbf;
+      position: relative;
+      margin-right: 10px;
+
+      .borderWrapper {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top: -2px;
+        left: -2px;
+        border-radius: 50%;
+        border-left: 2px solid transparent;
+        transform: rotate(34deg);
+      }
+      .blueBorderWrapper {
+        border-top: 2px solid #1890ff;
+        border-right: 2px solid #1890ff;
+        border-bottom: 2px solid #1890ff;
+      }
+
+      .contentWrapper {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        font-size: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #bfbfbf;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .contentWrapperBlue {
+        background: #1890ff;
+        color: white;
+      }
+    }
+
+    .stepDescription {
+      margin-top: 5px;
+      white-space: pre;
+      top: 100%;
+      text-align: center;
+      font-size: 10px;
+      color: #00000073;
+    }
+    .stepDescriptionBlue {
+      color: #000000D9;
+    }
+
+    @media screen and (max-width: 550px) {
+      .stepDescription {
+        white-space: normal;
+      }
+    }
+  }
+}

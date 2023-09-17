@@ -1,0 +1,76 @@
+.header-desktop {
+  display: none !important;
+}
+
+.header_menu_left {
+  height:100%
+}
+
+.header_logo_center, .header_menu_right {
+  height:100%; 
+  align-content:center
+}
+
+@media screen and (min-width: 1000px) {
+  .header-mobile {
+    display: none !important;
+  }
+
+  .header-desktop {
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-mobile {
+    padding: 0 10px !important;
+  }
+}
+
+.d-flex-justify,
+.d-flex-justify .ant-form-item-control-input-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.ant-dropdown-menu-item:active,
+.ant-dropdown-menu-item:hover {
+  background-color: #e6f7ff !important;
+  color: #4198e5 !important;
+}
+
+.ant-dropdown-menu-item > a:active,
+.ant-dropdown-menu-item > a:hover {
+  background-color: #e6f7ff !important;
+  color: #4198e5 !important;
+}
+
+@media screen and (max-width: 999px) {
+  .btn-sign {
+    border: none !important;
+    font-size: 15px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    color: #000000 !important;
+    background-color: #fff!important;
+  }
+
+  .ant-dropdown-menu-item > a {
+    color: #000000 !important;
+  }
+
+  .btn-sign span {
+    float: left !important;
+  }
+
+  .btn-sign:hover,
+  .btn-sign:active {
+    background-color: #e6f7ff !important;
+    color: #4198e5 !important;
+  }
+}

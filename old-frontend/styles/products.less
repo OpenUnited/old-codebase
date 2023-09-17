@@ -1,0 +1,172 @@
+/* product page */
+.left-panel {
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 4px;
+}
+
+.left-panel .ant-menu {
+    border-bottom: none !important;
+    border-right: 0;
+}
+
+.ant-typography {
+    &.black-color {
+        a {
+            color: rgba(0, 0, 0, 0.85);
+        }
+    }
+}
+
+.left-panel .ant-menu-item {
+    border-bottom: 1px solid #e8e8e8 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    color: var(--grey-7);
+    font-size: 16px;
+}
+
+.left-panel .ant-menu-item:last-child {
+    border-bottom: none !important;
+}
+
+.left-panel .ant-menu-item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-right: 3px solid #096DD9;
+    -webkit-transform: scaleY(0.0001);
+    -ms-transform: scaleY(0.0001);
+    transform: scaleY(0.0001);
+    opacity: 0;
+    -webkit-transition: opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+    content: '';
+}
+
+.left-panel .ant-menu-item-selected {
+    background-color: #ffffff !important;
+    font-weight: 600;
+}
+
+.left-panel .ant-menu-item-selected::before {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1;
+    -webkit-transition: opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.left-panel .ant-menu-item::after {
+    display: none !important;
+}
+
+.custom-link,
+.custom-link:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.product-detail-video {
+    max-width: 300px;
+}
+
+.folder-icon {
+    color: #096DD9;
+    line-height: 28px;
+    margin-right: 5px;
+}
+
+.product-page .ant-divider-horizontal {
+    margin: 12px 0;
+}
+
+.first-node {
+    padding-top: 12px;
+}
+
+.node-title {
+    font-size: 14px;
+}
+
+.attachment-item {
+    background-color: var(--light-grey);
+}
+
+.attachment-item__text {
+    line-height: 1.7;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.ant-select {
+    width: 100%;
+    // flex: 1;
+}
+
+.left-panel {
+    margin-bottom: 0;
+    .product-page-children {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}
+
+.product-page-children {
+    @media (max-width: 767px) {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+}
+
+.right-panel-headline {
+    margin-top: 10px;
+    @media (max-width: 575px) {
+        display: block;
+        text-align: left;
+        button:not(:last-of-type) {
+            //margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+    //&.strong-height {
+    //    height: 30px;
+    //}
+    //
+    //@media (max-width: 991px) {
+    //    &.strong-height {
+    //        height: auto;
+    //        max-height: 55px;
+    //    }
+    //}
+    //
+    //@media (max-width: 767px) {
+    //    &.strong-height {
+    //        height: auto;
+    //        padding-top: 20px;
+    //        max-height: unset;
+    //    }
+    //}
+}
+
+.product-list-item {
+    padding: 24px 0;
+    &:not(:last-of-type) {
+        border-bottom: 1px solid #D9D9D9;
+    }
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    width: 100%;
+}

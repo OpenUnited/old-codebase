@@ -1,0 +1,95 @@
+.main-page {
+    margin-top: 40px;
+}
+
+label.ant-radio-button-wrapper-checked {
+    background-color: #096DD9 !important;
+    color: #ffffff !important;
+}
+
+.tag-section {
+    display: flex;
+    justify-content: flex-start;
+
+    @media (min-width: 600px) {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.product-list {
+    width: 100%;
+
+    .ant-card-body {
+        cursor: pointer;
+    }
+
+    a:hover {
+        color: #2e8de6 !important;
+    }
+}
+
+.custom-page-content {
+  h1 {
+    margin-bottom: .5em;
+    color: rgba(0,0,0,.85);
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.23;
+  }
+
+  h2 {
+    margin-bottom: .5em;
+    color: rgba(0,0,0,.85);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  h3 {
+    margin-bottom: .5em;
+    color: rgba(0,0,0,.85);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.35;
+  }
+}
+
+.show-more-anchor {
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  color: #096DD9;
+  display: block;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+
+.show-review-events {
+  margin-top: 10px;
+
+  button {
+    width: 142px;
+  }
+}
+
+.task-event-container {
+  @media screen and (max-width: 767px) {
+    display: flex !important;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    button {
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .show-review-events {
+      margin-top: 0;
+
+    }
+  }
+}

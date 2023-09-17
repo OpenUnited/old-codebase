@@ -1,0 +1,52 @@
+.float-label{
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.label{
+  font-size: 10px!important;
+  line-height: 12px;
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  top: 12px;
+  left: 1px;
+  transition: .2s ease all;
+}
+
+.labelfloat{
+  opacity: 100%;
+  top: -20px;
+  color: #1890ff;
+}
+
+.labelfilled{
+  opacity: 100%;
+  top: -20px;
+  color: #8c8c8c;
+}
+
+input:focus::placeholder{
+  color: transparent;
+}
+
+.ant-form-item-has-error,
+.ant-form-item-explain-error{
+  div[role=alert]{
+    color: transparent;
+  }
+
+  label{
+    color: red;
+    opacity: 100%;
+    top: -20px;
+  }
+}
+
+.label-error{
+  color: #EA4335;
+}
+
+.ant-input {
+  border-radius: 10px !important;
+}
